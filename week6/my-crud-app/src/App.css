@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #282c34;
+  color: white;
+  gap: 0px; 
+}
+
+.app-header {
+  position: fixed;
+  top: 0px;
+  left: 100px; 
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10; 
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column; 
+  gap: 25px; 
+  width: 40%; 
+  max-width: 380px; 
+  margin-top: 100px; 
+  margin-left: 65px; 
+}
+
+.weather-section {
+  border: 1px solid #ccc;
+  padding: 21px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  flex: 1;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column; 
+  gap: 3px; 
+  width: 65%; 
+  margin-top: 100px; 
+}
+
+textarea {
+  width: 89%; 
+  height: 60px; 
+  margin-top: 1px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  resize: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.button-group {
+  display: flex;
+  gap: 20px; 
+  margin-top: 0px; 
+}
+.react-calendar {
+  width: 100%;
+  max-width: 90%; 
+  background-color: #444;
+  border-radius: 8px;
+  color: white;
+}
+
+.react-calendar__tile {
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-calendar__month-view__days__day {
+  font-size: 12px;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #555;
+  color: #ddd;
+}
+.react-calendar__tile {
+  position: relative; 
+}
+
+.dot {
+  position: absolute;
+  bottom: 5px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: rgb(190, 99, 13);
+  border-radius: 50%;
+}
